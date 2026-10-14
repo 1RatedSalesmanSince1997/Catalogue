@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>My Game Website</title>
-  </head>
-  <body style="background-color: #121212; color: white; font-family: sans-serif; text-align: center; padding-top: 50px;">
-    <h1>Welcome to My Game!</h1>
-    <p>This is my first game website on GitHub Pages.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amusement Park - Official Flyer</title>
+  <style>
+    /* Dark vintage background */
+    body {
+      background-color: #0d0d0d;
+      color: #f0e6d2;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* Flyer Box styled like a retro paper pamphlet */
+    .flyer {
+      background: #1a1815;
+      border: 3px double #d4af37;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 550px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+      position: relative;
+    }
+
+    /* Distressed header style */
+    h1 {
+      font-size: 2.2rem;
+      letter-spacing: 3px;
+      color: #d4af37;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .tagline {
+      font-style: italic;
+      color: #a09580;
+      margin-bottom: 25px;
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      background: #26221c;
+      border-left: 4px solid #d4af37;
+      padding: 12px;
+      margin: 20px 0;
+      text-align: left;
+      font-size: 0.85rem;
+      line-height: 1.4;
+    }
+
+    /* Flyer Navigation Buttons */
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .flyer-btn {
+      background: #2b261f;
+      color: #d4af37;
+      border: 1px solid #d4af37;
+      padding: 12px 20px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+      display: block;
+    }
+
+    .flyer-btn:hover {
+      background: #d4af37;
+      color: #1a1815;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    }
+
+    .footer-text {
+      font-size: 0.75rem;
+      color: #666;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="flyer">
+    <h1>WELCOME VISITORS</h1>
+    <p class="tagline">"Where the fun never truly ends..."</p>
+
+    <div class="notice">
+      <strong>PARK NOTICE:</strong> Welcome to the park grounds! Please keep all personal belongings close, stay on paved paths, and pay no mind to restricted zones after dusk.
+    </div>
+
+    <!-- Navigation / Brochures -->
+    <div class="btn-container">
+      <a href="#" class="flyer-btn" onclick="alert('Park Map coming soon!')">🗺️ Park Map & Directory</a>
+      <a href="#" class="flyer-btn" onclick="alert('Catalogue coming soon!')">📋 Merchandise Catalogue</a>
+      <a href="#" class="flyer-btn" onclick="alert('Roblox Game link coming soon!')">🎮 Enter Roblox Place</a>
+    </div>
+
+    <p class="footer-text">PROPERTY OF AMUSEMENT PARK MANAGEMENT • DO NOT REMOVE</p>
+  </div>
+
+</body>
 </html>
